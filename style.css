@@ -1,0 +1,44 @@
+
+/*Applying suitable background gradient color to page*/
+body{
+	background: linear-gradient(to bottom right,#408DBB,#A9DAF8);
+	height: 100%;
+	margin: 0;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+}
+
+/*Setting margin for the login and register divs holding respective forms*/
+#regDiv, #loginDiv{
+	margin: 5px;
+	background-color: #8C8A8B;
+	height: 400px;
+	border-radius: 10px;
+}
+
+/*Setting margin property for the register and login forms*/
+#reg, #login{
+	margin: 5px;
+}
+
+/*Positioning content to center of screen*/
+.vertical-center {
+     position: fixed;
+     top: 50%;
+     left:80.5%;
+     transform: translate(-50%,-50%);
+}
+
+/*Positioning the carousel in home page to center of screen*/
+.carousel-center {
+     position: fixed;
+     top: 52%;
+     left:74.5%;
+     transform: translate(-50%,-50%);
+}
+
+/*Setting width of carousel appropriately*/
+.carousel{
+	width: 50%;
+}
+

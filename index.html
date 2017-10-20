@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>S-8 Assignment-2</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="script.js"></script>
+</head>
+
+<body>
+	<!-- Create a working student registration and login interface -->
+	<!-- This is the user login page -->
+	<center>
+		<h1 style="margin-left: 60px">STUDENT PORTAL</h1><br>
+		<h5 style="margin-left: 60px">Please login to proceed further. If you do not have an account, please register first.</h5>
+	</center>
+	<br><br>
+
+	<!-- Using bootstrap -->
+	<!-- Our main div that holds all of our main content -->
+	<div class="container-fluid col-sm-12 col-md-12 vertical-center">
+
+		<!-- Div holding login form -->
+		<div class="col-sm-5 col-md-5" id="loginDiv">
+			<!-- Login form -->
+			<form role="form" id="login">
+				<h4 style="font-weight: bold;">Don't have an account yet? 
+				<a href="register.html" style="text-decoration: underline;color: #3519A8;">REGISTER HERE</a></h4>
+				<br><br>
+				<!-- All input fields for login ~~~Start~~~ -->
+				<div class="form-group">
+					<label>Email:</label>
+					<input type="Email" name="email" id="emailL" class="form-control input-sm" placeholder="E-mail" required>
+				</div>
+				<div class="form-group">
+					<label>Password:</label>
+					<input type="password" name="pwd" id="pwdL" class="form-control input-sm" placeholder="Enter your password" required>
+				</div>
+				<br>
+				<div class="form-group">
+					<!-- If login credentials are wrong, a warning is displayed in red. -->
+					<span id="warning" style="float: right;color: red;"></span>
+				</div>
+				<br>
+				<div class="form-group">
+					<button type="submit" id="login" class="btn btn-primary" style="float: right;" onclick="validate(); return false;">Login</button>
+				</div>
+				<!-- All input fields for login ~~~End~~~ -->
+			</form>	
+		</div>	
+	</div>
+</body>
+</html>
